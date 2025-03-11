@@ -6,6 +6,16 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('scroll.css');
 
+/*Determinar las variables css*/
+:root {
+    --bg-color: #e8e8e8;
+    --text-color: #000000;
+    --menu-color:#000000;
+
+}
+
+
+
 html {
     /* 
     * box-sizing
@@ -29,7 +39,7 @@ body {
     /* mobile. Tamaño mínimo recomendado */
     font-size: 14px;
     line-height: 1.4em;
-    background-color: #e8e8e8;
+    background-color: var(--bg-color);
     overflow-x: hidden;
 }
 
@@ -49,6 +59,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.1em;
+    color: var(--text-color);
 }
 
 h1 {
@@ -96,7 +107,7 @@ nav ul li {
 }
 
 a.box-link {
-    color: #000;
+    color: var(--menu-color);
     font-weight: 600;
     text-decoration: none;
     padding: 0.25em .5em;
@@ -119,6 +130,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1em;
+    color: var(--text-color);
 }
 
 p {
@@ -131,8 +143,26 @@ p {
     width: 90%;
     min-width: 290px;
     max-width: 1200px;
+    color: var(--text-color);
 }
 
 nav.container {
     padding: 1em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin: 0 1em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
