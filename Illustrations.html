@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic HTML - Starter Markup</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <meta name="apple-mobile-web-app-title" content="HTML Starter" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Semantic HTML - Starter Markup">
+    <meta property="og:description" content="Un documento de inicio para crear páginas HTML semánticas con buenas prácticas. Incluye ejemplos y referencias.">
+    <meta property="og:url" content="https://juanfuent-es.github.io/html-starter/">
+    <meta property="og:type" content="website">
+    <!-- favicon -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="background">
+
+        <video autoplay loop muted plays-inline class="back-video" style="width: 100%;">
+        <source src="img/background.mp4" type="video/mp4">    
+        </video>
+
+    </div>
+
+    <header class="barra-superior">
     
+         <div class="logo">
+            <ul>
+        <!-- urls de ejemplo como rutas de navegación -->
+                <li>
+                    <a href="../index.html" aria-label="Inicio" class="active">
+                        <img src="img/kuaki-logo.svg" alt="Logotipo de kuaki">
+                    </a>
+                </ul>
+            </div>
+            <nav>
+         <div class="redes-sociales">
+                <ul>
+        <!-- Enlaces a redes sociales -->
+                    <li><a href="https://www.instagram.com/ku_akis?igsh=eWlicDE5aGh3cmFo&utm_source=qr" target="_blank" title="Kuaki on Insta">IG</a></li>
+                    <li><a href="https://x.com/kuakis_art?s=21&t=ALYTc_aGdNwu4cWadgsfoQ" target="_blank" title="Kuaki on X">X</a></li>
+                    <li><a href="https://www.behance.net/valentiramrez13" target="_blank" title="Kuaki on behance">BE</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- Contenido -->
+        <section class="block">
+            <header>
+                <h1>Valentina Ramirez</h1>
+            </header>
+            <h2>About me!</h2>
+            <p>A computing creative student who loves to draw! I´m currently at my 2nd semester. Currently learning HTML and Animation 2d. ♡　</p>
+        </section>
+        <div class="div_illustrations" style="position: relative;">
+            <nav>
+            <ul>
+                <li style="position: relative;">
+                    <a href="Illustrations.html">
+                    <img src="img/illustrations_cover.PNG" alt="Illustrations Cover"></a>
+                  </a>
+                </li>
+                <li style="position: relative;">
+                    <a href="school_projects.html">
+                    <img src="img/projects_cover.PNG" alt="Projects Cover"></a>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+
+    </main>
+    <footer>
+        <small>クアキ 2025</small>
+    </footer>
 </body>
 </html>
