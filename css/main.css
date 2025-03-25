@@ -82,13 +82,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 h3 {
@@ -163,11 +163,11 @@ p {
 
 .barra-superior {
     display: flex; 
-    justify-content: space-between; 
+    position: fixed;
+    justify-content: center; 
     align-items: center; 
     height: 10vh;
     padding: 0 2em;     
-    position: fixed;
     width: 100%;
     background: var(--bg-color);
     color: var(--text-color);
@@ -201,6 +201,14 @@ p {
     color: var(--menu-color);
 }
 
+main{
+    padding: 0 2em;
+    margin-top: 10vh;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    
+  }
 
 .block {
     display: block;
@@ -210,7 +218,7 @@ p {
     margin: auto;
     margin-top: 0%; /* Center horizontally */
     width: 450px;
-    height: 200px;
+    height: 150px;
     background: #242424;
     color: #FCFCFC;
     text-align: left;
@@ -221,5 +229,43 @@ p {
 }
 
 .block p{
-    font-size: 1em;
+    font-size: 0.8em;
+}
+
+.div_covers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5em; 
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 0.5%; /* Center horizontally */
+    width: 900px;
+    height: 400px;
+    color: #FCFCFC;
+    text-align: left;
+    position: relative;
+}
+
+.div_covers img:hover {
+    transform: scale(1.5); 
+    
+  }
+
+.div_covers img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 0 1em;
+}
+
+.cover_text p{
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 2em;
+    border-radius: 5px;
 }
