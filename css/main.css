@@ -122,10 +122,24 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
 }
-
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+}
 nav ul li {
     display: inline;
 }
+
+main{
+    padding: 0 2em;
+    margin-top: 10vh;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    
+  }
 
 a.box-link {
     color: var(--menu-color);
@@ -150,7 +164,6 @@ a.active {
 footer {
     width: 100%;
     text-align: center;
-    padding: 1em;
     color: var(--text-color);
 }
 
@@ -171,6 +184,7 @@ p {
     width: 100%;
     background: var(--bg-color);
     color: var(--text-color);
+    z-index: 1000;
 }
 
 .barra-superior .logo {
@@ -201,35 +215,35 @@ p {
     color: var(--menu-color);
 }
 
-main{
-    padding: 0 2em;
-    margin-top: 10vh;
-    position: relative;
-    justify-content:center;
-    align-items: center;
-    
-  }
 
 .block {
     display: block;
+    position: relative;
     align-items: center;
-    padding: 0 2em; 
+    padding: 1em; 
     border-radius: 10px;
     margin: auto;
-    margin-top: 0%; /* Center horizontally */
-    width: 450px;
-    height: 150px;
+    margin-top: 2%; /* Center horizontally */
+    max-width: 500px;
+    width: 100%;
+    height: auto;
     background: #242424;
-    color: #FCFCFC;
+    color: var(--text-color);
+}
+
+.block-text h1{
     text-align: left;
 }
 
-.block h1{
-    padding: 5px;
+.block-text p{
+    font-size: 0.8em;
 }
 
-.block p{
-    font-size: 0.8em;
+.block-text {
+    position: relative;
+    text-align: left;
+    color: var(--text-color);
+    text-align: left;
 }
 
 .div_covers {
@@ -239,7 +253,7 @@ main{
     padding: 0 5em; 
     border-radius: 10px;
     margin: auto;
-    margin-top: 0.5%; /* Center horizontally */
+    margin-top: 0%; /* Center horizontally */
     width: 900px;
     height: 400px;
     color: #FCFCFC;
@@ -260,12 +274,71 @@ main{
     margin: 0 1em;
 }
 
-.cover_text p{
+ ul li p{
     position: absolute;
     text-align: center;
     font-size: 2em;
     color: var(--text-color);
     text-align: center;
-    padding: 0 2em;
+    padding: 0;
     border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.div_illustrations{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em; 
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2%; /* Center horizontally */
+    width: 100%;
+    height: auto;
+    color: #FCFCFC;
+    text-align: left;
+    position: relative;
+}
+
+.div_illustrations div {
+    flex: 1 1 calc(50% - 1em);
+    text-align: center; /* Centra el contenido dentro de cada columna */
+}
+
+
+.div_illustrations img:hover {
+    transform: scale(0.5em); 
+    
+  }
+
+.div_illustrations img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    margin: 0 2em;
+    
+}
+
+.div_illustrations li{
+    position: relative;
+    align-content: normal;
+}
+
+.div_illustrations ul li p{
+    position: absolute;
+    font-size: 1em;
+    color: var(--text-color);;
+    padding: 0;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    bottom: 10;
+    transform: translateY(50%);
+}
+
+
