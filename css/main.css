@@ -424,7 +424,6 @@ p {
     height: auto;
     border-radius: 10px;
     transition: all 0.3s ease;
-    margin: 0 1em;
 }
 
 .div_covers_projects ul li p{
@@ -446,3 +445,44 @@ p {
 }
 
 
+.div_covers_projects .processing p{
+font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 auto;
+    margin: 0;
+   
+}
+
+.div_covers_video video {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    padding: 2em;
+    margin-top: 10%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .div_covers_video video  {
+        flex-direction: column; /* Asegura que los elementos estén en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        padding: 1em; /* Reduce el padding en pantallas pequeñas */
+        margin-top: 60%;
+    }
+
+    .div_covers_projects ul {
+        margin-bottom: 1em; /* Agrega espacio entre las imágenes y el video */
+    }
