@@ -414,7 +414,7 @@ p {
 }
 
 .div_covers_projects img:hover {
-    transform: scale(1.5); 
+    transform: scale(1.1); 
     
   }
 
@@ -434,7 +434,7 @@ p {
   font-style: normal;
     position: absolute;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 0.8em;
     color: var(--text-color);
     text-align: right;
     padding: 0 auto;
@@ -444,3 +444,5 @@ p {
     bottom:10%;
     transform: translateY(50%);
 }
+
+
