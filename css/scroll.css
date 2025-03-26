@@ -3,9 +3,9 @@
 * @author: JuanFuent.es
 */
 :root {
-    --scroll-background: #e8e8e8;
+    --scroll-background: #000000;
     --scroll-foreground: #000;
-    --scroll-background-over: #666666;
+    --scroll-background-over: #000000;
     --scroll-border-radius: 0px;
     --scroll-size: 10px;
 }

@@ -190,7 +190,6 @@ p {
 .barra-superior .logo {
     flex: 1; /* Permite que el logo ocupe espacio */
     text-align: center; /* Centra el logo horizontalmente */
-    cursor: pointer;
 }
 
 .barra-superior .logo img{
@@ -214,6 +213,63 @@ p {
     text-decoration: none;
     color: var(--menu-color);
 }
+
+.barra-superior .menu-desplegable {
+    justify-content: center; 
+    align-items: center;
+    width: 10%;
+    height: 9%;
+    position: fixed;
+    left: 0%; /* Added margin from the left */
+    top:2%;
+    transition: 0.2s all;
+    z-index: 1001; /* Ensure it appears above other elements */
+    text-align: center;
+}
+
+.barra-superior .menu-desplegable img{
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+
+  .barra-superior .menu-desplegable ul {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+}
+
+.menu-desplegable li, .menu-desplegable a, .menu-desplegable h2 {
+    transition: 0.3s all;
+    font-size: 0;
+    padding: 0;
+    color: var(--menu-color);
+}
+
+.barra-superior .menu-desplegable:hover {
+    width: 25%;
+    height: 25%;
+    transform: none;
+}
+
+.barra-superior .menu-desplegable:hover h2 {
+    font-size: 30px;
+    padding: 15px;
+    color: #000000;
+}
+
+.barra-superior .menu-desplegable:hover a {
+    font-size: 15.5px;
+    display: block;
+    padding: 20px;
+}
+
+.barra-superior .menu-desplegable:hover li {
+    border-top: 1px solid #000000;
+    background-color: var(--bg-color);
+}
+
 
 
 .block {
@@ -248,16 +304,17 @@ p {
 
 .div_covers {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     padding: 0 5em; 
     border-radius: 10px;
-    margin: auto;
-    margin-top: 0%; /* Center horizontally */
-    width: 900px;
-    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%; /* Center horizontally */
+    width: 100%;
+    max-width: 900px;
+    max-height: 400px;
+    height:   auto;
     color: #FCFCFC;
-    text-align: left;
     position: relative;
 }
 
@@ -274,7 +331,7 @@ p {
     margin: 0 1em;
 }
 
- ul li p{
+.div_covers ul li p{
     position: absolute;
     text-align: center;
     font-size: 2em;
@@ -341,4 +398,49 @@ p {
     transform: translateY(50%);
 }
 
+.div_covers_projects {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5em; 
+    margin: 0 auto;
+    margin-top: 5%; /* Center horizontally */
+    width: 100%;
+    max-width: 900px;
+    max-height: 400px;
+    height:   auto;
+    color: #FCFCFC;
+    position: relative;
+}
 
+.div_covers_projects img:hover {
+    transform: scale(1.5); 
+    
+  }
+
+.div_covers_projects img{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 0 1em;
+}
+
+.div_covers_projects ul li p{
+    font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    position: absolute;
+    text-align: right;
+    font-size: 1.5em;
+    color: var(--text-color);
+    text-align: right;
+    padding: 0 auto;
+    margin: 0;
+    width: 100%;
+    right: 10%;
+    bottom:10%;
+    transform: translateY(50%);
+}
